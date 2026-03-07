@@ -2,9 +2,9 @@ import { Play, RotateCcw } from "lucide-react";
 
 export default function Pomodoro() {
   return (
-    <div className="mt-5 flex flex-col gap-5">
+    <div className=" flex flex-col gap-5">
       <section>
-        <h1 className="text-3xl font-bold mb-2">Timer Pomodoro</h1>
+        <h1 className="text-3xl font-bold mb-2 mt-5">Timer Pomodoro</h1>
         <p>Trabalhe em blocos focados de 25 minutos</p>
       </section>
 

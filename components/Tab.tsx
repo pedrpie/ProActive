@@ -1,5 +1,6 @@
 import { Tabs, Box, Text } from "@radix-ui/themes";
 import Pomodoro from "./Pomodoro";
+import Tasks from "./Tasks";
 
 export default function Tab() {
   return (
@@ -18,7 +19,7 @@ export default function Tab() {
           </Tabs.Content>
 
           <Tabs.Content value="tarefas">
-            <Text size="2">Access and update your documents.</Text>
+            <Tasks />
           </Tabs.Content>
 
           <Tabs.Content value="progresso">
