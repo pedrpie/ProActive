@@ -1,6 +1,7 @@
 import { Tabs, Box, Text } from "@radix-ui/themes";
 import Pomodoro from "./Pomodoro";
 import Tasks from "./Tasks";
+import Statistics from "./Statistics";
 
 export default function Tab() {
   return (
@@ -9,7 +10,7 @@ export default function Tab() {
         <Tabs.List className="flex gap-5">
           <Tabs.Trigger value="pomodoro">Pomodoro</Tabs.Trigger>
           <Tabs.Trigger value="tarefas">Tarefas</Tabs.Trigger>
-          <Tabs.Trigger value="progresso">Progresso</Tabs.Trigger>
+          <Tabs.Trigger value="estatisticas">Estatísticas</Tabs.Trigger>
           <Tabs.Trigger value="habitos">Hábitos</Tabs.Trigger>
         </Tabs.List>
 
@@ -22,10 +23,8 @@ export default function Tab() {
             <Tasks />
           </Tabs.Content>
 
-          <Tabs.Content value="progresso">
-            <Text size="2">
-              Edit your profile or update contact information.
-            </Text>
+          <Tabs.Content value="estatisticas">
+            <Statistics />
           </Tabs.Content>
 
           <Tabs.Content value="habitos">
